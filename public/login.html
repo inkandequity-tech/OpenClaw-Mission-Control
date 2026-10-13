@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>Sign in · Mission Control</title>
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/themes.css">
+<link rel="stylesheet" href="/app.css">
+<script src="/theme-init.js"></script>
+</head>
+<body class="login">
+<main id="main" class="login-main">
+  <form id="f" class="panel login-card" autocomplete="on">
+    <header><h1>Mission Control</h1></header>
+    <div class="panel-body stack">
+      <p class="muted">Sign in to monitor and operate OpenClaw. Changes stay locked until you confirm your password again.</p>
+      <label>User name<input id="user" name="username" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" required value="admin"></label>
+      <label>Password<input id="pw" name="password" type="password" autocomplete="current-password" required></label>
+      <div id="err" class="notice crit" role="alert" hidden></div>
+      <button class="btn primary" type="submit" id="go">Sign in</button>
+    </div>
+  </form>
+</main>
+<script type="module" src="/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "openclaw-mission-control",
+  "version": "0.1.0",
+  "description": "Secure, private-network Mission Control for OpenClaw, a LAN LLM inference server, Tailscale and Telegram.",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "start": "node server/index.ts",
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "users": "node scripts/users.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.9.0"
+  }
+}
